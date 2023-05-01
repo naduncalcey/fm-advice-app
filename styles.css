@@ -1,0 +1,104 @@
+/* styles */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Rubik:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --dark-blue: hsl(218, 23%, 16%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --neon-green: hsl(150, 100%, 66%);
+    --light-cyan: hsl(193, 38%, 86%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    transition: ease-in-out 0.4s;
+}
+
+body {
+    background: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    height: 100vh;
+}
+
+.advice {
+    position: relative;
+    background: var(--dark-grayish-blue);
+    text-align: center;
+    width: 90%;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: #0000001f 20px 20px 20px 0px;
+}
+
+.advice-no {
+    display: flex;
+    justify-content: center;
+    margin-block-end: 18px;
+}
+
+.advice-no-txt {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: var(--neon-green);
+    font-size: 400;
+}
+
+.advice-data {
+    font-size: 18px;
+    padding-block: 5px 25px;
+}
+
+.advice-data .advice-data-txt {
+    color: var(--light-cyan);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+}
+
+.advice-data-txt span {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+}
+
+.advice-comma {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: var(--light-cyan);
+}
+
+.advice-divider {
+    width: 230px;
+    padding-block-end: 15px;
+}
+
+.advice-btn {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 15px;
+    display: flex;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--neon-green);
+}
+
+.advice-btn:hover {
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 0px #79b697, 0 0 20px #52ffa8, 0 0 35px #52ffa8;
+            box-shadow: 0 0 0px #79b697, 0 0 20px #52ffa8, 0 0 35px #52ffa8;
+}
+
+@media(min-width:600px) {
+    .advice {
+        max-width: 560px;
+    }
+}
