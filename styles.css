@@ -97,8 +97,8 @@ body {
             box-shadow: 0 0 0px #79b697, 0 0 20px #52ffa8, 0 0 35px #52ffa8;
 }
 
-@media(min-width:600px) {
+@media(min-width:500px) {
     .advice {
-        max-width: 560px;
+        max-width: 460px;
     }
 }
